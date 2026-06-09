@@ -8,6 +8,20 @@ import { MapView } from "@/components/Map";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+const mapLocations = [
+  { name: "Bad River Band", lat: 46.5065, lng: -90.6543, url: "https://badriver-nsn.gov" },
+  { name: "Forest County Potawatomi", lat: 45.5580, lng: -88.9282, url: "https://fcpotawatomi.com" },
+  { name: "Ho-Chunk Nation", lat: 44.2955, lng: -90.8507, url: "https://ho-chunknation.com" },
+  { name: "Lac Courte Oreilles Band", lat: 45.9227, lng: -91.1485, url: "https://lco-nsn.gov" },
+  { name: "Lac du Flambeau Band", lat: 45.9660, lng: -89.8956, url: "https://ldftribe.com" },
+  { name: "Menominee Indian Tribe", lat: 44.8788, lng: -88.7093, url: "https://menominee-nsn.gov" },
+  { name: "Oneida Nation", lat: 44.5133, lng: -88.1926, url: "https://oneida-nsn.gov" },
+  { name: "Red Cliff Band", lat: 46.8605, lng: -90.8015, url: "https://redcliff-nsn.gov" },
+  { name: "Sokaogon Chippewa", lat: 45.5785, lng: -88.7026, url: "https://sokaogon.com" },
+  { name: "St. Croix Chippewa", lat: 45.6271, lng: -92.0760, url: "https://stcroixojibwe-nsn.gov" },
+  { name: "Stockbridge-Munsee", lat: 44.8596, lng: -88.9768, url: "https://mohican.com" },
+];
+
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/hero_bg-WccTKyJ6EqU6rA5NWhGrDh.webp";
 const NATIONS_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/wisconsin_nations_bg-aVW6MgVUPm8YqDcLSNXhJQ.webp";
 
@@ -161,63 +175,9 @@ export default function Tribes() {
                 NATOW works in partnership with each of these nations to promote authentic tourism experiences that honor tribal sovereignty and support economic self-determination.
               </p>
             </div>
-            {/* Right: Interactive Google Map */}
+            {/* Right: Interactive Map */}
             <div className="w-full h-[420px] lg:h-[480px] rounded-sm shadow-xl overflow-hidden border border-[#0F2419]/10">
-                  <MapView
-                    onMapReady={(map) => {
-                      const bounds = new google.maps.LatLngBounds();
-                      const infoWindow = new google.maps.InfoWindow();
-                      const locations = [
-                        { name: "Bad River Band", lat: 46.5065, lng: -90.6543, url: "https://badriver-nsn.gov" },
-                        { name: "Forest County Potawatomi", lat: 45.5580, lng: -88.9282, url: "https://fcpotawatomi.com" },
-                        { name: "Ho-Chunk Nation", lat: 44.2955, lng: -90.8507, url: "https://ho-chunknation.com" },
-                        { name: "Lac Courte Oreilles Band", lat: 45.9227, lng: -91.1485, url: "https://lco-nsn.gov" },
-                        { name: "Lac du Flambeau Band", lat: 45.9660, lng: -89.8956, url: "https://ldftribe.com" },
-                        { name: "Menominee Indian Tribe", lat: 44.8788, lng: -88.7093, url: "https://menominee-nsn.gov" },
-                        { name: "Oneida Nation", lat: 44.5133, lng: -88.1926, url: "https://oneida-nsn.gov" },
-                        { name: "Red Cliff Band", lat: 46.8605, lng: -90.8015, url: "https://redcliff-nsn.gov" },
-                        { name: "Sokaogon Chippewa", lat: 45.5785, lng: -88.7026, url: "https://sokaogon.com" },
-                        { name: "St. Croix Chippewa", lat: 45.6271, lng: -92.0760, url: "https://stcroixojibwe-nsn.gov" },
-                        { name: "Stockbridge-Munsee", lat: 44.8596, lng: -88.9768, url: "https://mohican.com" },
-                      ];
-                      locations.forEach((loc) => {
-                        const marker = new google.maps.Marker({
-                          position: { lat: loc.lat, lng: loc.lng },
-                          map,
-                          title: loc.name,
-                          icon: {
-                            path: google.maps.SymbolPath.CIRCLE,
-                            scale: 9,
-                            fillColor: "#D4922A",
-                            fillOpacity: 1,
-                            strokeColor: "#0F2419",
-                            strokeWeight: 2,
-                          },
-                        });
-                        bounds.extend(marker.getPosition()!);
-                        marker.addListener("click", () => {
-                          infoWindow.setContent(
-                            `<div style="font-family:serif;padding:4px 2px">
-                              <strong style="color:#0F2419;font-size:13px">${loc.name}</strong><br/>
-                              <a href="${loc.url}" target="_blank" style="color:#D4922A;font-size:11px;text-decoration:none">Visit Website →</a>
-                            </div>`
-                          );
-                          infoWindow.open(map, marker);
-                        });
-                      });
-                      map.fitBounds(bounds);
-                      map.setOptions({
-                        styles: [
-                          { elementType: "geometry", stylers: [{ color: "#e8e0d0" }] },
-                          { elementType: "labels.text.fill", stylers: [{ color: "#0F2419" }] },
-                          { featureType: "water", elementType: "geometry", stylers: [{ color: "#a8c8d8" }] },
-                          { featureType: "road", stylers: [{ visibility: "simplified" }] },
-                          { featureType: "poi", stylers: [{ visibility: "off" }] },
-                          { featureType: "administrative.locality", elementType: "labels", stylers: [{ visibility: "simplified" }] },
-                        ],
-                      });
-                    }}
-                  />
+              <MapView locations={mapLocations} className="w-full h-full" />
             </div>
             <p className="font-body text-[#0F2419]/50 text-xs mt-3 text-center col-span-full">
               Click any marker to learn about each Tribal Nation

@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Explore */}
+          {/* Pages */}
           <div>
             <div className="section-label mb-5">Explore</div>
             <ul className="space-y-3">
@@ -41,9 +41,7 @@ export default function Footer() {
                 { href: "/tribes", label: "Our Nations" },
                 { href: "/experiences", label: "Experiences" },
                 { href: "/events", label: "Upcoming Events" },
-                { href: "/experiences#culture", label: "Culture & Heritage" },
-                { href: "/experiences#nature", label: "Nature & Land" },
-                { href: "/experiences#arts", label: "Arts & Crafts" },
+                { href: "/about", label: "About NATOW" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -57,16 +55,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Organization */}
+          {/* Experiences */}
           <div>
-            <div className="section-label mb-5">Organization</div>
+            <div className="section-label mb-5">Experiences</div>
             <ul className="space-y-3">
               {[
-                { href: "/about", label: "About NATOW" },
-                { href: "/about#mission", label: "Our Mission" },
-                { href: "/about#membership", label: "Membership" },
-                { href: "/about#partners", label: "Partners" },
-                { href: "/about#media", label: "Media & Press" },
+                { href: "/experiences#culture", label: "Culture & Heritage" },
+                { href: "/experiences#powwow", label: "Pow Wows" },
+                { href: "/experiences#nature", label: "Nature & Land" },
+                { href: "/experiences#arts", label: "Arts & Crafts" },
+                { href: "/experiences#history", label: "Museums & History" },
+                { href: "/experiences#gaming", label: "Gaming & Resorts" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link

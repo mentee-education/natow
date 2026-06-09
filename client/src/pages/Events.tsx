@@ -285,21 +285,21 @@ export default function Events() {
       )}
 
       {/* Submit Event CTA */}
-      <section className="py-16 bg-[#0F2419]">
+      <section className="py-16 bg-[#F7F0E4] border-t border-[#0F2419]/10">
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <div className="section-label mb-2 text-[#D4922A]">Tribal Organizations</div>
-              <h2 className="font-display text-white font-semibold text-2xl md:text-3xl">
+              <div className="section-label mb-2">Tribal Organizations</div>
+              <h2 className="font-display text-[#0F2419] font-semibold text-2xl md:text-3xl">
                 Submit Your Event
               </h2>
-              <p className="font-body text-white/60 text-sm mt-2">
+              <p className="font-body text-[#0F2419]/60 text-sm mt-2">
                 Are you a tribal nation or organization with an upcoming event? Contact NATOW to have it listed here.
               </p>
             </div>
             <a
               href="mailto:director@natow.org?subject=Event Submission"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#D4922A] text-[#0F2419] font-label text-[0.7rem] tracking-[0.15em] uppercase hover:bg-[#C4821A] transition-colors font-semibold whitespace-nowrap"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#0F2419] text-white font-label text-[0.7rem] tracking-[0.15em] uppercase hover:bg-[#1a3a2a] transition-colors font-semibold whitespace-nowrap"
             >
               Contact NATOW <ArrowRight size={14} />
             </a>
