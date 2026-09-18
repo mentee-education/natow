@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Facebook } from "lucide-react";
 
-const LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/natow_logo_v2-expXLpBa8kNhXQgB4gDjm3.webp";
 
 const navLinks = [
   { href: "/", label: "Home" },

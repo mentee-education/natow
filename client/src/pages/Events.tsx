@@ -6,7 +6,7 @@ import { Calendar, MapPin, ArrowRight, Filter } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/hero_bg-WccTKyJ6EqU6rA5NWhGrDh.webp";
+const HERO_BG = "https://pub-33506cc4454a4df09ca77fb67e07f22b.r2.dev/hero_bg.webp";
 const POWWOW1 = "/images/powwow1_2bd0e553.webp";
 const POWWOW2 = "/images/powwow2_8f1a2bc7.jpg";
 const POWWOW3 = "/images/powwow3_58c1f393.jpg";

@@ -7,10 +7,10 @@ import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/hero_bg-WccTKyJ6EqU6rA5NWhGrDh.webp";
-const HERO_CULTURE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/hero_culture-YJdJprCZoDvvbebaXvh44f.webp";
-const EXP_ARTS = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/experience_arts-a4PErnmjrBsadCVdaUhfdW.webp";
-const EXP_NATURE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/experience_nature-CdiWZws6hNX8ZVpGeBpLVk.webp";
+const HERO_BG = "https://pub-33506cc4454a4df09ca77fb67e07f22b.r2.dev/hero_bg.webp";
+const HERO_CULTURE = "/images/powwow3_58c1f393.jpg";
+const EXP_ARTS = "/images/powwow1_2bd0e553.webp";
+const EXP_NATURE = "/images/forest1_a13f36eb.jpg";
 const POWWOW1 = "/images/powwow1_2bd0e553.webp";
 const POWWOW2 = "/images/powwow2_8f1a2bc7.jpg";
 const FOREST = "/images/forest1_a13f36eb.jpg";

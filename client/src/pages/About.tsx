@@ -7,9 +7,9 @@ import { ArrowRight, Users, Globe, Award, Heart } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/hero_bg-WccTKyJ6EqU6rA5NWhGrDh.webp";
-const TRIBAL_MAP = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/tribal_map_bg-LNPrUxpXutCnnXa2LLCDmJ.webp";
-const HERO_CULTURE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/hero_culture-YJdJprCZoDvvbebaXvh44f.webp";
+const HERO_BG = "https://pub-33506cc4454a4df09ca77fb67e07f22b.r2.dev/hero_bg.webp";
+const TRIBAL_MAP = "https://pub-33506cc4454a4df09ca77fb67e07f22b.r2.dev/tribal_map_bg.webp";
+const HERO_CULTURE = "/images/powwow3_58c1f393.jpg";
 
 function useReveal() {
   const ref = useRef<HTMLDivElement>(null);

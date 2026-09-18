@@ -22,8 +22,7 @@ const mapLocations = [
   { name: "Stockbridge-Munsee", lat: 44.8596, lng: -88.9768, url: "https://mohican.com" },
 ];
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/hero_bg-WccTKyJ6EqU6rA5NWhGrDh.webp";
-const NATIONS_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407421710/ResnJz7wuYxVieXdqtq7xE/wisconsin_nations_bg-aVW6MgVUPm8YqDcLSNXhJQ.webp";
+const HERO_BG = "https://pub-33506cc4454a4df09ca77fb67e07f22b.r2.dev/hero_bg.webp";
 
 function useReveal() {
   const ref = useRef<HTMLDivElement>(null);
